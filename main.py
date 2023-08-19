@@ -1,13 +1,10 @@
-from taipy.gui import Gui
+from taipy.gui import Gui, notify, navigate
 from dotenv import load_dotenv
 import requests
 import os
-import pandas as pd
+import requests
+import json
 
-#  WAVE api key
-load_dotenv()
-api_key = os.getenv("API_KEY")
-url = os.getenv("URL")
 
 # store general errors
 errors_array = []
@@ -83,54 +80,52 @@ if response.ok:
 
     
 
-value = 10
+text = "https://www.google.com"
+page1_md = """
+# Accesibility Checker INC. 
+# Enter the URL of your website to perform an accessibility check
 
-page = """
-#Our Very First Taipy Application
-#Testing out branch commit
+My text: <|{text}|>
 
-<|layout|columns=1 1 1|
+<|{text}|input|>
 
-<|first column
-<|container container-styling|
-###Slider 1 <br/>
-Slider value: <|{value}|> <br/>
-<|{value}|slider|>
-|>
-|>
-
-<|second column
-<|container container-styling|
-###Slider 2 <br/>
-Slider value: <|{value}|> <br/>
-<|{value}|slider|>
-|>
-|>
-
-<|third column
-<|container container-styling|
-###Slider 3 <br/>
-Slider value: <|{value}|> <br/>
-<|{value}|slider|>
-|>
-|>
-|>
-
+<|Check|button|on_action=on_button_action|>
 """
 
-from taipy.gui import Gui
-import requests
-import json
+response = None
 
-Gui(page = "BIG ASS DATA").run(dark_mode=True) # use_reloader=True
+page2_md = "## Accessibility Visualization"
 
-def jprint(obj):
-    # create a formatted string of the Python JSON object
-    text = json.dumps(obj, sort_keys=True, indent=4)
-    print(text)
+pages = {
+    "page1": page1_md,
+    "page2": page2_md
+}
 
 
-response = requests.get("https://wave.webaim.org/api/request?key=kw1MFx7w3380&reporttype=2&url=https://google.com/")
-jprint(response.json())
+def on_button_action(state):
+    global response
+    notify(state, 'info', f'The text is: {state.text}')
+    response = requests.get(f'https://wave.webaim.org/api/request?key={api_key}&reporttype={report_type}&url={text}')
+    if response is not None:
+        print("Response Status Code:", response.status_code)
+        navigate(state, "page2")
 
-Gui(page).run(use_reloader=True, port=5001)
+
+
+
+
+def on_change(state, var_name, var_value):
+    if var_name == "text" and var_value == "Reset":
+        state.text = ""
+        return
+
+#  WAVE api key
+load_dotenv()
+api_key = os.getenv("API_KEY")
+url = os.getenv("URL")
+report_type = 1
+
+# get data from WAVE api in json format
+
+
+Gui(pages=pages).run(use_reloader=True, port=5001)
