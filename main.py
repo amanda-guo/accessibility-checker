@@ -63,12 +63,6 @@ Slider value: <|{value}|> <br/>
 
 """
 
-from taipy.gui import Gui
-import requests
-import json
-
-Gui(page = "BIG ASS DATA").run(dark_mode=True) # use_reloader=True
-
 def jprint(obj):
     # create a formatted string of the Python JSON object
     text = json.dumps(obj, sort_keys=True, indent=4)
