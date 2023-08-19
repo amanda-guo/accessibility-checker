@@ -22,6 +22,10 @@ contrast_errors_array = []
 # store other alerts
 alerts_array = []
 
+# declaring data variables
+data_errors = {}
+data_values = {}
+
 # get data from WAVE api in json format
 
 text = "https://www.google.com"
@@ -37,13 +41,6 @@ My text: <|{text}|>
 """
 
 response = None
-
-page2_md = "## Accessibility Visualization"
-
-pages = {
-    "page1": page1_md,
-    "page2": page2_md
-}
 
 def pretty_print():
     response = requests.get(f'https://wave.webaim.org/api/request?key={api_key}&reporttype=2&url={url}')
@@ -108,16 +105,86 @@ def pretty_print():
             print("Number of Errors: " + str(error["count"]))
             print()
 
+# Putting the data into simple bar and pie charts
+
+def visualizing_errors():
+    
+    # Errors
+
+    typeOfError = []
+    numberOfErrors = []
+
+    for error in errors_array:
+        typeOfError.append(error["id"])
+        numberOfErrors.append(error["count"])
+
+    for error in contrast_errors_array:
+        typeOfError.append(error["id"])
+        numberOfErrors.append(error["count"])
+
+    dataErrors = {
+        "Type of Error": typeOfError,
+        "Number of Errors": numberOfErrors
+    }
+
+    # Alerts
+
+    typeOfAlert = []
+    numberOfAlerts = []
+
+    for alert in alerts_array:
+        typeOfAlert.append(alert["id"])
+        numberOfAlerts.append(alert["count"])
+
+    dataAlerts = {
+        "Type of Alert": typeOfAlert,
+        "Number of Alerts": numberOfAlerts
+    }
+
+    print("EXECUTED THIS FUNCTION")
+
+    return dataErrors, dataAlerts
 
 def on_button_action(state):
     global response
     notify(state, 'info', f'The text is: {state.text}')
     pretty_print()
     navigate(state, "page2")
+    result = visualizing_errors()
+    data_errors = result[0]
+    data_alerts = result[1]
 
 def on_change(state, var_name, var_value):
     if var_name == "text" and var_value == "Reset":
         state.text = ""
         return
+
+
+page2_md = """
+
+## Accessibility Visualization
+
+# Bar graph for errors
+
+<|{data_errors}|chart|type=bar|x=Type of Error|y=Number of Errors|>
+
+# Pie chart for errors
+
+<|{data_errors}|chart|type=pie|values=Number of Errors|label=Type of Error|>
+
+# Bar graph for alerts
+
+<|{data_alerts}|chart|type=bar|x=Type of Alert|y=Number of Alerts|>
+
+# Pie chart for alerts
+
+<|{data_alerts}|chart|type=pie|values=Number of Alerts|label=Type of Alert|>
+
+"""
+
+pages = {
+    "page1": page1_md,
+    "page2": page2_md
+}
 
 Gui(pages=pages).run(use_reloader=True, port=5001)
