@@ -1,0 +1,217 @@
+
+{'status': 
+{'success': True, 'httpstatuscode': 200},
+
+ 'statistics': 
+{'pagetitle': 'Accessibility tools audit results - What we tested - GDS accessibility team', 'pageurl': 'https://alphagov.github.io/accessibility-tool-audit/test-cases.html', 'time': 2.81, 'creditsremaining': 61, 'allitemcount': 371, 'totalelements': 1083, 'waveurl': 'http://wave.webaim.org/report?url=https://alphagov.github.io/accessibility-tool-audit/test-cases.html'},
+
+ 'categories': 
+{'error': 
+{'description': 'Errors', 'count': 21, 'items': 
+{'alt_missing': 
+{'id': 'alt_missing', 'description': 'Missing alternative text', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[56]/IMG[1]']},
+
+ 'alt_link_missing': 
+{'id': 'alt_link_missing', 'description': 'Linked image missing alternative text', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[67]/A[1]/IMG[1]']},
+
+ 'alt_input_missing': 
+{'id': 'alt_input_missing', 'description': 'Image button missing alternative text', 'count': 2, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[87]/INPUT[1]', '/HTML/BODY[1]/MAIN[1]/DIV[90]/INPUT[1]']},
+
+ 'label_missing': 
+{'id': 'label_missing', 'description': 'Missing form label', 'count': 8, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[92]/FORM[1]/P[1]/INPUT[2]', '/HTML/BODY[1]/MAIN[1]/DIV[92]/FORM[1]/P[1]/INPUT[3]', '/HTML/BODY[1]/MAIN[1]/DIV[96]/FORM[1]/INPUT[1]', '/HTML/BODY[1]/MAIN[1]/DIV[99]/FORM[1]/FIELDSET[1]/INPUT[1]', '/HTML/BODY[1]/MAIN[1]/DIV[105]/FORM[1]/FIELDSET[1]/INPUT[1]', '/HTML/BODY[1]/MAIN[1]/DIV[105]/FORM[1]/FIELDSET[1]/INPUT[2]', '/HTML/BODY[1]/MAIN[1]/DIV[105]/FORM[1]/FIELDSET[1]/INPUT[3]', '/HTML/BODY[1]/MAIN[1]/DIV[107]/FORM[1]/INPUT[1]']},
+
+ 'label_empty': 
+{'id': 'label_empty', 'description': 'Empty form label', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[101]/FORM[1]/LABEL[1]']},
+
+ 'label_multiple': 
+{'id': 'label_multiple', 'description': 'Multiple form labels', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[102]/FORM[1]/P[1]/INPUT[1]']},
+
+ 'language_missing': 
+{'id': 'language_missing', 'description': 'Language missing or invalid', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[28]/P[1]/SPAN[1]']},
+
+ 'heading_empty': 
+{'id': 'heading_empty', 'description': 'Empty heading', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[35]/H4[1]']},
+
+ 'button_empty': 
+{'id': 'button_empty', 'description': 'Empty button', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[88]/BUTTON[1]']},
+
+ 'link_empty': 
+{'id': 'link_empty', 'description': 'Empty link', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[77]/A[1]']},
+
+ 'th_empty': 
+{'id': 'th_empty', 'description': 'Empty table header', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[52]/TABLE[1]/THEAD[1]/TR[1]/TH[1]']},
+
+ 'blink': 
+{'id': 'blink', 'description': 'Blinking content', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[17]/BLINK[1]']},
+
+ 'marquee': 
+{'id': 'marquee', 'description': 'Marquee', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[19]/MARQUEE[1]']}}},
+
+ 'contrast': 
+{'description': 'Contrast Errors', 'count': 5, 'items': 
+{'contrast': 
+{'id': 'contrast', 'description': 'Very low contrast', 'count': 5, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[10]/P[1]', '/HTML/BODY[1]/MAIN[1]/DIV[11]/P[1]', '/HTML/BODY[1]/MAIN[1]/DIV[12]/P[1]', '/HTML/BODY[1]/MAIN[1]/DIV[13]/P[1]', '/HTML/BODY[1]/MAIN[1]/DIV[103]/FORM[1]/DIV[1]'], 'contrastdata': [[4.37, '#757980', '#ffffff', False], [3.4, '#878c8c', '#ffffff', False], [2.86, '#9499a1', '#ffffff', False], [3.4, '#878c8c', '#ffffff', False], [1.24, '#ffffff', '#fae1e1', False]]}}},
+
+ 'alert': 
+{'description': 'Alerts', 'count': 35, 'items': 
+{'alt_redundant': 
+{'id': 'alt_redundant', 'description': 'Redundant alternative text', 'count': 3, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[63]/IMG[1]', '/HTML/BODY[1]/MAIN[1]/DIV[80]/A[1]/IMG[1]', '/HTML/BODY[1]/MAIN[1]/DIV[82]/A[1]/IMG[1]']},
+
+ 'alt_suspicious': 
+{'id': 'alt_suspicious', 'description': 'Suspicious alternative text', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[62]/IMG[1]']},
+
+ 'image_title': 
+{'id': 'image_title', 'description': 'Image with title', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[58]/IMG[1]']},
+
+ 'label_orphaned': 
+{'id': 'label_orphaned', 'description': 'Orphaned form label', 'count': 4, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[99]/FORM[1]/FIELDSET[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[105]/FORM[1]/FIELDSET[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[105]/FORM[1]/FIELDSET[1]/LABEL[2]', '/HTML/BODY[1]/MAIN[1]/DIV[105]/FORM[1]/FIELDSET[1]/LABEL[3]']},
+
+ 'fieldset_missing': 
+{'id': 'fieldset_missing', 'description': 'Missing fieldset', 'count': 2, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[95]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[100]/FORM[1]/LABEL[1]']},
+
+ 'legend_missing': 
+{'id': 'legend_missing', 'description': 'Fieldset missing legend', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[97]/FORM[1]/FIELDSET[1]']},
+
+ 'heading_skipped': 
+{'id': 'heading_skipped', 'description': 'Skipped heading level', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[38]/H5[1]']},
+
+ 'heading_possible': 
+{'id': 'heading_possible', 'description': 'Possible heading', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[83]/P[1]']},
+
+ 'link_suspicious': 
+{'id': 'link_suspicious', 'description': 'Suspicious link text', 'count': 4, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[69]/A[1]', '/HTML/BODY[1]/MAIN[1]/DIV[85]/A[1]', '/HTML/BODY[1]/MAIN[1]/H3[108]/A[1]', '/HTML/BODY[1]/MAIN[1]/DIV[121]/A[1]']},
+
+ 'link_redundant': 
+{'id': 'link_redundant', 'description': 'Redundant link', 'count': 3, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[1]/OL[1]/LI[1]/A[1]', '/HTML/BODY[1]/MAIN[1]/DIV[80]/A[2]', '/HTML/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/P[2]/A[1]']},
+
+ 'link_pdf': 
+{'id': 'link_pdf', 'description': 'Link to PDF document', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[75]/A[1]']},
+
+ 'audio_video': 
+{'id': 'audio_video', 'description': 'Audio/Video', 'count': 2, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[73]/A[1]', '/HTML/BODY[1]/MAIN[1]/DIV[84]/A[1]']},
+
+ 'plugin': 
+{'id': 'plugin', 'description': 'Plugin', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[139]/OBJECT[1]']},
+
+ 'accesskey': 
+{'id': 'accesskey', 'description': 'Accesskey', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[123]/A[1]']},
+
+ 'tabindex': 
+{'id': 'tabindex', 'description': 'Tabindex', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[114]/A[1]']},
+
+ 'text_small': 
+{'id': 'text_small', 'description': 'Very small text', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[21]/P[1]']},
+
+ 'text_justified': 
+{'id': 'text_justified', 'description': 'Justified text', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[22]/P[1]']},
+
+ 'title_redundant': 
+{'id': 'title_redundant', 'description': 'Redundant title text', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[72]/A[1]']},
+
+ 'table_layout': 
+{'id': 'table_layout', 'description': 'Layout table', 'count': 2, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[47]/TABLE[1]/THEAD[1]/TR[1]/TD[1]', '/HTML/BODY[1]/MAIN[1]/DIV[51]/TABLE[1]/TBODY[1]/TR[1]/TD[1]']},
+
+ 'html5_video_audio': 
+{'id': 'html5_video_audio', 'description': 'HTML5 video or audio', 'count': 2, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[64]/VIDEO[1]', '/HTML/BODY[1]/MAIN[1]/DIV[66]/AUDIO[1]']},
+
+ 'youtube_video': 
+{'id': 'youtube_video', 'description': 'YouTube video', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[65]/IFRAME[1]']}}},
+
+ 'feature': 
+{'description': 'Features', 'count': 44, 'items': 
+{'alt': 
+{'id': 'alt', 'description': 'Alternative text', 'count': 4, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[54]/IMG[1]', '/HTML/BODY[1]/MAIN[1]/DIV[55]/IMG[1]', '/HTML/BODY[1]/MAIN[1]/DIV[59]/IMG[1]', '/HTML/BODY[1]/MAIN[1]/DIV[61]/IMG[1]']},
+
+ 'alt_null': 
+{'id': 'alt_null', 'description': 'Null or empty alternative text', 'count': 2, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[58]/IMG[1]', '/HTML/BODY[1]/MAIN[1]/DIV[60]/IMG[1]']},
+
+ 'alt_spacer': 
+{'id': 'alt_spacer', 'description': 'Null or empty alternative text on spacer', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[140]/IMG[1]']},
+
+ 'alt_link': 
+{'id': 'alt_link', 'description': 'Linked image with alternative text', 'count': 2, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[80]/A[1]/IMG[1]', '/HTML/BODY[1]/MAIN[1]/DIV[82]/A[1]/IMG[1]']},
+
+ 'alt_input': 
+{'id': 'alt_input', 'description': 'Image button with alternative text', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[89]/INPUT[1]']},
+
+ 'label': 
+{'id': 'label', 'description': 'Form label', 'count': 27, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[91]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[91]/FORM[1]/LABEL[2]', '/HTML/BODY[1]/MAIN[1]/DIV[91]/FORM[1]/LABEL[3]', '/HTML/BODY[1]/MAIN[1]/DIV[92]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[93]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[94]/FORM[1]/P[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[95]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[95]/FORM[1]/LABEL[2]', '/HTML/BODY[1]/MAIN[1]/DIV[100]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[100]/FORM[1]/LABEL[2]', '/HTML/BODY[1]/MAIN[1]/DIV[100]/FORM[1]/LABEL[3]', '/HTML/BODY[1]/MAIN[1]/DIV[102]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[102]/FORM[1]/P[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[102]/FORM[1]/P[1]/LABEL[2]', '/HTML/BODY[1]/MAIN[1]/DIV[102]/FORM[1]/P[1]/LABEL[3]', '/HTML/BODY[1]/MAIN[1]/DIV[103]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[103]/FORM[1]/LABEL[2]', '/HTML/BODY[1]/MAIN[1]/DIV[103]/FORM[1]/LABEL[3]', '/HTML/BODY[1]/MAIN[1]/DIV[104]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[104]/FORM[1]/LABEL[2]', '/HTML/BODY[1]/MAIN[1]/DIV[106]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[108]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[108]/FORM[1]/LABEL[2]', '/HTML/BODY[1]/MAIN[1]/DIV[108]/FORM[1]/LABEL[3]', '/HTML/BODY[1]/MAIN[1]/DIV[109]/FORM[1]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[111]/LABEL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[122]/LABEL[1]']},
+
+ 'fieldset': 
+{'id': 'fieldset', 'description': 'Fieldset', 'count': 3, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[98]/FORM[1]/FIELDSET[1]/LEGEND[1]', '/HTML/BODY[1]/MAIN[1]/DIV[99]/FORM[1]/FIELDSET[1]/LEGEND[1]', '/HTML/BODY[1]/MAIN[1]/DIV[105]/FORM[1]/FIELDSET[1]/LEGEND[1]']},
+
+ 'lang': 
+{'id': 'lang', 'description': 'Language', 'count': 4, 'xpaths': ['#', '/HTML/BODY[1]/MAIN[1]/DIV[23]/P[1]', '/HTML/BODY[1]/MAIN[1]/DIV[26]/P[1]', '/HTML/BODY[1]/MAIN[1]/DIV[31]/P[1]/SPAN[1]']}}},
+
+ 'structure': 
+{'description': 'Structural Elements', 'count': 258, 'items': 
+{'table_data': 
+{'id': 'table_data', 'description': 'Data table', 'count': 11, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]', '/HTML/BODY[1]/MAIN[1]/DIV[44]/TABLE[1]', '/HTML/BODY[1]/MAIN[1]/DIV[45]/TABLE[1]', '/HTML/BODY[1]/MAIN[1]/DIV[45]/TABLE[1]/TBODY[1]/TR[3]/TH[1]/TABLE[1]', '/HTML/BODY[1]/MAIN[1]/DIV[46]/TABLE[1]', '/HTML/BODY[1]/MAIN[1]/DIV[46]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/TABLE[1]', '/HTML/BODY[1]/MAIN[1]/DIV[48]/TABLE[1]', '/HTML/BODY[1]/MAIN[1]/DIV[49]/TABLE[1]', '/HTML/BODY[1]/MAIN[1]/DIV[50]/TABLE[1]', '/HTML/BODY[1]/MAIN[1]/DIV[52]/TABLE[1]', '/HTML/BODY[1]/MAIN[1]/DIV[53]/TABLE[1]']},
+
+ 'table_caption': 
+{'id': 'table_caption', 'description': 'Table caption', 'count': 6, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/CAPTION[1]', '/HTML/BODY[1]/MAIN[1]/DIV[44]/TABLE[1]/CAPTION[1]', '/HTML/BODY[1]/MAIN[1]/DIV[47]/TABLE[1]/CAPTION[1]', '/HTML/BODY[1]/MAIN[1]/DIV[48]/TABLE[1]/CAPTION[1]', '/HTML/BODY[1]/MAIN[1]/DIV[52]/TABLE[1]/CAPTION[1]', '/HTML/BODY[1]/MAIN[1]/DIV[53]/TABLE[1]/CAPTION[1]']},
+
+ 'th': 
+{'id': 'th', 'description': 'Table header cell', 'count': 37, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/TBODY[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/TBODY[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/TBODY[1]/TR[1]/TH[3]', '/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/TBODY[1]/TR[1]/TH[4]', '/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/TBODY[1]/TR[2]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/TBODY[1]/TR[2]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/TBODY[1]/TR[3]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/TBODY[1]/TR[3]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/TBODY[1]/TR[4]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[43]/TABLE[1]/TBODY[1]/TR[4]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[44]/TABLE[1]/TBODY[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[44]/TABLE[1]/TBODY[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[44]/TABLE[1]/TBODY[1]/TR[1]/TH[3]', '/HTML/BODY[1]/MAIN[1]/DIV[44]/TABLE[1]/TBODY[1]/TR[2]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[44]/TABLE[1]/TBODY[1]/TR[3]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[45]/TABLE[1]/TBODY[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[45]/TABLE[1]/TBODY[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[45]/TABLE[1]/TBODY[1]/TR[3]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[45]/TABLE[1]/TBODY[1]/TR[3]/TH[1]/TABLE[1]/TBODY[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[45]/TABLE[1]/TBODY[1]/TR[3]/TH[1]/TABLE[1]/TBODY[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[46]/TABLE[1]/TBODY[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[46]/TABLE[1]/TBODY[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[46]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[46]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[48]/TABLE[1]/THEAD[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[48]/TABLE[1]/TBODY[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[48]/TABLE[1]/TBODY[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[48]/TABLE[1]/TBODY[1]/TR[2]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[48]/TABLE[1]/TBODY[1]/TR[3]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[48]/TABLE[1]/TBODY[1]/TR[3]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[49]/TABLE[1]/THEAD[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[49]/TABLE[1]/THEAD[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[49]/TABLE[1]/THEAD[1]/TR[1]/TH[3]', '/HTML/BODY[1]/MAIN[1]/DIV[49]/TABLE[1]/THEAD[1]/TR[1]/TH[4]', '/HTML/BODY[1]/MAIN[1]/DIV[53]/TABLE[1]/THEAD[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[53]/TABLE[1]/THEAD[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[53]/TABLE[1]/THEAD[1]/TR[1]/TH[3]']},
+
+ 'th_col': 
+{'id': 'th_col', 'description': 'Column header cell', 'count': 5, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[50]/TABLE[1]/THEAD[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[50]/TABLE[1]/THEAD[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[50]/TABLE[1]/THEAD[1]/TR[1]/TH[3]', '/HTML/BODY[1]/MAIN[1]/DIV[52]/TABLE[1]/THEAD[1]/TR[1]/TH[2]', '/HTML/BODY[1]/MAIN[1]/DIV[52]/TABLE[1]/THEAD[1]/TR[1]/TH[3]']},
+
+ 'th_row': 
+{'id': 'th_row', 'description': 'Row header cell', 'count': 4, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[50]/TABLE[1]/TBODY[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[50]/TABLE[1]/TBODY[1]/TR[2]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[52]/TABLE[1]/TBODY[1]/TR[1]/TH[1]', '/HTML/BODY[1]/MAIN[1]/DIV[52]/TABLE[1]/TBODY[1]/TR[2]/TH[1]']},
+
+ 'h1': 
+{'id': 'h1', 'description': 'Heading level 1', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[2]/DIV[1]/H1[1]']},
+
+ 'h2': 
+{'id': 'h2', 'description': 'Heading level 2', 'count': 21, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/H2[1]', '/HTML/BODY[1]/MAIN[1]/H2[2]', '/HTML/BODY[1]/MAIN[1]/H2[3]', '/HTML/BODY[1]/MAIN[1]/H2[4]', '/HTML/BODY[1]/MAIN[1]/H2[5]', '/HTML/BODY[1]/MAIN[1]/H2[6]', '/HTML/BODY[1]/MAIN[1]/H2[7]', '/HTML/BODY[1]/MAIN[1]/H2[8]', '/HTML/BODY[1]/MAIN[1]/H2[9]', '/HTML/BODY[1]/MAIN[1]/DIV[51]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/H2[1]', '/HTML/BODY[1]/MAIN[1]/H2[10]', '/HTML/BODY[1]/MAIN[1]/H2[11]', '/HTML/BODY[1]/MAIN[1]/H2[12]', '/HTML/BODY[1]/MAIN[1]/H2[13]', '/HTML/BODY[1]/MAIN[1]/H2[14]', '/HTML/BODY[1]/MAIN[1]/H2[15]', '/HTML/BODY[1]/MAIN[1]/H2[16]', '/HTML/BODY[1]/MAIN[1]/H2[17]', '/HTML/BODY[1]/MAIN[1]/H2[18]', '/HTML/BODY[1]/MAIN[1]/H2[19]', '/HTML/BODY[1]/MAIN[1]/DIV[135]/ARTICLE[1]/H2[1]']},
+
+ 'h3': 
+{'id': 'h3', 'description': 'Heading level 3', 'count': 143, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/H3[1]', '/HTML/BODY[1]/MAIN[1]/H3[2]', '/HTML/BODY[1]/MAIN[1]/H3[3]', '/HTML/BODY[1]/MAIN[1]/H3[4]', '/HTML/BODY[1]/MAIN[1]/H3[5]', '/HTML/BODY[1]/MAIN[1]/H3[6]', '/HTML/BODY[1]/MAIN[1]/H3[7]', '/HTML/BODY[1]/MAIN[1]/H3[8]', '/HTML/BODY[1]/MAIN[1]/H3[9]', '/HTML/BODY[1]/MAIN[1]/H3[10]', '/HTML/BODY[1]/MAIN[1]/H3[11]', '/HTML/BODY[1]/MAIN[1]/H3[12]', '/HTML/BODY[1]/MAIN[1]/H3[13]', '/HTML/BODY[1]/MAIN[1]/H3[14]', '/HTML/BODY[1]/MAIN[1]/H3[15]', '/HTML/BODY[1]/MAIN[1]/H3[16]', '/HTML/BODY[1]/MAIN[1]/H3[17]', '/HTML/BODY[1]/MAIN[1]/H3[18]', '/HTML/BODY[1]/MAIN[1]/H3[19]', '/HTML/BODY[1]/MAIN[1]/H3[20]', '/HTML/BODY[1]/MAIN[1]/H3[21]', '/HTML/BODY[1]/MAIN[1]/H3[22]', '/HTML/BODY[1]/MAIN[1]/H3[23]', '/HTML/BODY[1]/MAIN[1]/H3[24]', '/HTML/BODY[1]/MAIN[1]/H3[25]', '/HTML/BODY[1]/MAIN[1]/H3[26]', '/HTML/BODY[1]/MAIN[1]/H3[27]', '/HTML/BODY[1]/MAIN[1]/H3[28]', '/HTML/BODY[1]/MAIN[1]/H3[29]', '/HTML/BODY[1]/MAIN[1]/H3[30]', '/HTML/BODY[1]/MAIN[1]/H3[31]', '/HTML/BODY[1]/MAIN[1]/H3[32]', '/HTML/BODY[1]/MAIN[1]/H3[33]', '/HTML/BODY[1]/MAIN[1]/H3[34]', '/HTML/BODY[1]/MAIN[1]/H3[35]', '/HTML/BODY[1]/MAIN[1]/H3[36]', '/HTML/BODY[1]/MAIN[1]/DIV[38]/H3[1]', '/HTML/BODY[1]/MAIN[1]/H3[37]', '/HTML/BODY[1]/MAIN[1]/H3[38]', '/HTML/BODY[1]/MAIN[1]/H3[39]', '/HTML/BODY[1]/MAIN[1]/H3[40]', '/HTML/BODY[1]/MAIN[1]/H3[41]', '/HTML/BODY[1]/MAIN[1]/H3[42]', '/HTML/BODY[1]/MAIN[1]/H3[43]', '/HTML/BODY[1]/MAIN[1]/H3[44]', '/HTML/BODY[1]/MAIN[1]/H3[45]', '/HTML/BODY[1]/MAIN[1]/H3[46]', '/HTML/BODY[1]/MAIN[1]/H3[47]', '/HTML/BODY[1]/MAIN[1]/H3[48]', '/HTML/BODY[1]/MAIN[1]/H3[49]', '/HTML/BODY[1]/MAIN[1]/H3[50]', '/HTML/BODY[1]/MAIN[1]/H3[51]', '/HTML/BODY[1]/MAIN[1]/H3[52]', '/HTML/BODY[1]/MAIN[1]/H3[53]', '/HTML/BODY[1]/MAIN[1]/H3[54]', '/HTML/BODY[1]/MAIN[1]/H3[55]', '/HTML/BODY[1]/MAIN[1]/H3[56]', '/HTML/BODY[1]/MAIN[1]/H3[57]', '/HTML/BODY[1]/MAIN[1]/H3[58]', '/HTML/BODY[1]/MAIN[1]/H3[59]', '/HTML/BODY[1]/MAIN[1]/H3[60]', '/HTML/BODY[1]/MAIN[1]/H3[61]', '/HTML/BODY[1]/MAIN[1]/H3[62]', '/HTML/BODY[1]/MAIN[1]/H3[63]', '/HTML/BODY[1]/MAIN[1]/H3[64]', '/HTML/BODY[1]/MAIN[1]/H3[65]', '/HTML/BODY[1]/MAIN[1]/H3[66]', '/HTML/BODY[1]/MAIN[1]/H3[67]', '/HTML/BODY[1]/MAIN[1]/H3[68]', '/HTML/BODY[1]/MAIN[1]/H3[69]', '/HTML/BODY[1]/MAIN[1]/H3[70]', '/HTML/BODY[1]/MAIN[1]/H3[71]', '/HTML/BODY[1]/MAIN[1]/H3[72]', '/HTML/BODY[1]/MAIN[1]/H3[73]', '/HTML/BODY[1]/MAIN[1]/H3[74]', '/HTML/BODY[1]/MAIN[1]/H3[75]', '/HTML/BODY[1]/MAIN[1]/H3[76]', '/HTML/BODY[1]/MAIN[1]/H3[77]', '/HTML/BODY[1]/MAIN[1]/H3[78]', '/HTML/BODY[1]/MAIN[1]/H3[79]', '/HTML/BODY[1]/MAIN[1]/H3[80]', '/HTML/BODY[1]/MAIN[1]/H3[81]', '/HTML/BODY[1]/MAIN[1]/H3[82]', '/HTML/BODY[1]/MAIN[1]/H3[83]', '/HTML/BODY[1]/MAIN[1]/H3[84]', '/HTML/BODY[1]/MAIN[1]/H3[85]', '/HTML/BODY[1]/MAIN[1]/H3[86]', '/HTML/BODY[1]/MAIN[1]/H3[87]', '/HTML/BODY[1]/MAIN[1]/H3[88]', '/HTML/BODY[1]/MAIN[1]/H3[89]', '/HTML/BODY[1]/MAIN[1]/H3[90]', '/HTML/BODY[1]/MAIN[1]/H3[91]', '/HTML/BODY[1]/MAIN[1]/H3[92]', '/HTML/BODY[1]/MAIN[1]/H3[93]', '/HTML/BODY[1]/MAIN[1]/H3[94]', '/HTML/BODY[1]/MAIN[1]/H3[95]', '/HTML/BODY[1]/MAIN[1]/H3[96]', '/HTML/BODY[1]/MAIN[1]/H3[97]', '/HTML/BODY[1]/MAIN[1]/H3[98]', '/HTML/BODY[1]/MAIN[1]/H3[99]', '/HTML/BODY[1]/MAIN[1]/H3[100]', '/HTML/BODY[1]/MAIN[1]/H3[101]', '/HTML/BODY[1]/MAIN[1]/H3[102]', '/HTML/BODY[1]/MAIN[1]/H3[103]', '/HTML/BODY[1]/MAIN[1]/H3[104]', '/HTML/BODY[1]/MAIN[1]/H3[105]', '/HTML/BODY[1]/MAIN[1]/H3[106]', '/HTML/BODY[1]/MAIN[1]/H3[107]', '/HTML/BODY[1]/MAIN[1]/H3[108]', '/HTML/BODY[1]/MAIN[1]/H3[109]', '/HTML/BODY[1]/MAIN[1]/H3[110]', '/HTML/BODY[1]/MAIN[1]/H3[111]', '/HTML/BODY[1]/MAIN[1]/H3[112]', '/HTML/BODY[1]/MAIN[1]/H3[113]', '/HTML/BODY[1]/MAIN[1]/H3[114]', '/HTML/BODY[1]/MAIN[1]/H3[115]', '/HTML/BODY[1]/MAIN[1]/H3[116]', '/HTML/BODY[1]/MAIN[1]/H3[117]', '/HTML/BODY[1]/MAIN[1]/H3[118]', '/HTML/BODY[1]/MAIN[1]/H3[119]', '/HTML/BODY[1]/MAIN[1]/H3[120]', '/HTML/BODY[1]/MAIN[1]/H3[121]', '/HTML/BODY[1]/MAIN[1]/H3[122]', '/HTML/BODY[1]/MAIN[1]/H3[123]', '/HTML/BODY[1]/MAIN[1]/H3[124]', '/HTML/BODY[1]/MAIN[1]/H3[125]', '/HTML/BODY[1]/MAIN[1]/H3[126]', '/HTML/BODY[1]/MAIN[1]/H3[127]', '/HTML/BODY[1]/MAIN[1]/H3[128]', '/HTML/BODY[1]/MAIN[1]/H3[129]', '/HTML/BODY[1]/MAIN[1]/H3[130]', '/HTML/BODY[1]/MAIN[1]/H3[131]', '/HTML/BODY[1]/MAIN[1]/H3[132]', '/HTML/BODY[1]/MAIN[1]/H3[133]', '/HTML/BODY[1]/MAIN[1]/H3[134]', '/HTML/BODY[1]/MAIN[1]/H3[135]', '/HTML/BODY[1]/MAIN[1]/H3[136]', '/HTML/BODY[1]/MAIN[1]/H3[137]', '/HTML/BODY[1]/MAIN[1]/H3[138]', '/HTML/BODY[1]/MAIN[1]/H3[139]', '/HTML/BODY[1]/MAIN[1]/H3[140]', '/HTML/BODY[1]/MAIN[1]/H3[141]', '/HTML/BODY[1]/MAIN[1]/H3[142]']},
+
+ 'h4': 
+{'id': 'h4', 'description': 'Heading level 4', 'count': 6, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[5]/DIV[1]/H4[1]', '/HTML/BODY[1]/MAIN[1]/DIV[35]/H4[1]', '/HTML/BODY[1]/MAIN[1]/DIV[38]/H4[1]', '/HTML/BODY[1]/MAIN[1]/DIV[69]/H4[1]', '/HTML/BODY[1]/MAIN[1]/DIV[95]/FORM[1]/H4[1]', '/HTML/BODY[1]/MAIN[1]/DIV[100]/FORM[1]/H4[1]']},
+
+ 'h5': 
+{'id': 'h5', 'description': 'Heading level 5', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[38]/H5[1]']},
+
+ 'ol': 
+{'id': 'ol', 'description': 'Ordered list', 'count': 2, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[1]/OL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[138]/DIV[1]/OL[1]']},
+
+ 'ul': 
+{'id': 'ul', 'description': 'Unordered list', 'count': 11, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[2]/DIV[1]/NAV[1]/UL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[9]/UL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[42]/UL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[42]/UL[1]/UL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[51]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/UL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[117]/DL[1]/DD[1]/UL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[117]/DL[1]/DD[2]/UL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[117]/DL[1]/DD[3]/UL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[119]/NAV[1]/UL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[119]/NAV[1]/UL[1]/LI[1]/UL[1]', '/HTML/BODY[1]/MAIN[1]/DIV[135]/ARTICLE[1]/NAV[1]/UL[1]']},
+
+ 'dl': 
+{'id': 'dl', 'description': 'Definition/description list', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[117]/DL[1]']},
+
+ 'iframe': 
+{'id': 'iframe', 'description': 'Inline frame', 'count': 3, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[65]/IFRAME[1]', '/HTML/BODY[1]/MAIN[1]/DIV[127]/IFRAME[1]', '/HTML/BODY[1]/MAIN[1]/DIV[128]/IFRAME[1]']},
+
+ 'header': 
+{'id': 'header', 'description': 'Header', 'count': 1, 'xpaths': ['/HTML/BODY[1]/HEADER[1]']},
+
+ 'nav': 
+{'id': 'nav', 'description': 'Navigation', 'count': 3, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[2]/DIV[1]/NAV[1]', '/HTML/BODY[1]/MAIN[1]/DIV[119]/NAV[1]', '/HTML/BODY[1]/MAIN[1]/DIV[135]/ARTICLE[1]/NAV[1]']},
+
+ 'main': 
+{'id': 'main', 'description': 'Main content', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]']},
+
+ 'footer': 
+{'id': 'footer', 'description': 'Footer', 'count': 1, 'xpaths': ['/HTML/BODY[1]/FOOTER[1]']}}},
+
+ 'aria': 
+{'description': 'ARIA', 'count': 8, 'items': 
+{'aria': 
+{'id': 'aria', 'description': 'ARIA', 'count': 2, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[55]/IMG[1]', '/HTML/BODY[1]/MAIN[1]/DIV[138]/DIV[1]/OL[1]']},
+
+ 'aria_label': 
+{'id': 'aria_label', 'description': 'ARIA label', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[135]/ARTICLE[1]/NAV[1]']},
+
+ 'aria_tabindex': 
+{'id': 'aria_tabindex', 'description': 'ARIA tabindex', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[116]/P[1]']},
+
+ 'aria_live_region': 
+{'id': 'aria_live_region', 'description': 'ARIA alert or live region', 'count': 3, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[91]/FORM[1]/DIV[1]', '/HTML/BODY[1]/MAIN[1]/DIV[103]/FORM[1]/DIV[1]', '/HTML/BODY[1]/MAIN[1]/DIV[108]/FORM[1]/DIV[1]']},
+
+ 'aria_button': 
+{'id': 'aria_button', 'description': 'ARIA button', 'count': 1, 'xpaths': ['/HTML/BODY[1]/MAIN[1]/DIV[121]/A[1]']}}}}}
