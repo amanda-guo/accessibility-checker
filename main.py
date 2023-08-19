@@ -45,11 +45,11 @@ pages = {
     "page2": page2_md
 }
 
-def pretty_print():
-    response = requests.get(f'https://wave.webaim.org/api/request?key={api_key}&reporttype=2&url={url}')
-    if response.ok:
+def pretty_print(state):
+    print(state.text)
+    response = requests.get(f'https://wave.webaim.org/api/request?key={api_key}&reporttype=2&url={state.text}')
+    if response.status_code == 200:
         data = response.json()
-        
         # credits remaining
         print("Credits Remaining:")
         print(data['statistics']['creditsremaining'])
@@ -108,12 +108,18 @@ def pretty_print():
             print("Number of Errors: " + str(error["count"]))
             print()
 
+        
+
 
 def on_button_action(state):
     global response
-    notify(state, 'info', f'The text is: {state.text}')
-    pretty_print()
-    navigate(state, "page2")
+    notify(state, 'info', f'URL: {state.text}')
+    try: 
+        pretty_print(state)
+        navigate(state, "page2")
+    except: 
+        print("asdkoasdmlasdmlaskdlasdmalsmdlasd")
+        notify(state, 'info', "Please try again.")
 
 def on_change(state, var_name, var_value):
     if var_name == "text" and var_value == "Reset":
