@@ -43,6 +43,6 @@ def jprint(obj):
     print(text)
 
 response = requests.get("https://wave.webaim.org/api/request?key=JH967hXT3384&reporttype=2&url=https://google.com/")
-jprint(response.json()) #
+jprint(response.json())
 
 Gui(page).run(use_reloader=True, port=5001)
