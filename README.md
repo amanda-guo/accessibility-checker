@@ -8,9 +8,11 @@
 2. Download pip (check by running `python3 -m pip --version`)
 3. Run `python3 -m pip install taipy`
 
-### Setup local development environment on Windows (following this guide: https://mlh.github.io/Getting-Started-with-Taipy/):
+### Setup local development environment on Linux (following this guide: https://mlh.github.io/Getting-Started-with-Taipy/):
 
-1. **please add details**
+1. Download Python 3.8 or newer (check by running `python3 --version`)
+2. Download pip (check by running `python3 -m pip --version`)
+3. Run `pip install taipy`
 
 ### Running the app:
 
