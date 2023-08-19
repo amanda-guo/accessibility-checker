@@ -19,5 +19,5 @@
 
 ### Taipy resources:
 
-YouTube tutorials: https://www.youtube.com/@taipy_io
+YouTube tutorials: https://www.youtube.com/@taipy_io  
 Official docs: https://www.taipy.io/ and https://docs.taipy.io/en/latest/getting_started/
