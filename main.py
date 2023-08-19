@@ -1,5 +1,19 @@
 from taipy.gui import Gui
+from dotenv import load_dotenv
+import requests
+import os
 import pandas as pd
+
+#  WAVE api key
+load_dotenv()
+api_key = os.getenv("API_KEY")
+url = os.getenv("URL")
+
+# get data from WAVE api in json format
+response = requests.get(f'https://wave.webaim.org/api/request?key={api_key}&reporttype=3&url={url}')
+if response.ok:
+    data = response.json()
+    print(data)
 
 value = 10
 
