@@ -5,6 +5,13 @@ import os
 import requests
 import json
 
+#  WAVE api key
+load_dotenv()
+api_key = os.getenv("API_KEY")
+url = os.getenv("URL")
+report_type = 1
+
+# get data from WAVE api in json format
 
 # store general errors
 errors_array = []
@@ -16,12 +23,11 @@ contrast_errors_array = []
 alerts_array = []
 
 # get data from WAVE api in json format
-    
 
 text = "https://www.google.com"
 page1_md = """
-# Accesibility Checker INC. 
-# Enter the URL of your website to perform an accessibility check
+# Accesibility Checker 
+# Enter the URL of your website to easily perform an accessibility check
 
 My text: <|{text}|>
 
@@ -108,23 +114,10 @@ def on_button_action(state):
     notify(state, 'info', f'The text is: {state.text}')
     pretty_print()
     navigate(state, "page2")
-        
-
-
-
 
 def on_change(state, var_name, var_value):
     if var_name == "text" and var_value == "Reset":
         state.text = ""
         return
-
-#  WAVE api key
-load_dotenv()
-api_key = os.getenv("API_KEY")
-url = os.getenv("URL")
-report_type = 1
-
-# get data from WAVE api in json format
-
 
 Gui(pages=pages).run(use_reloader=True, port=5001)
