@@ -1,5 +1,10 @@
 import requests, os
+import json
 from dotenv import load_dotenv
+
+# save list of errors in a dictionary
+with open('values.json', 'r') as json_file:
+    error_list = json.load(json_file)
 
 #  WAVE api key
 load_dotenv()
@@ -32,8 +37,7 @@ def pretty_print(url):
         errors = data["categories"]["error"]["items"]
         for type, item in errors.items():
             error_item = {
-                "id": item["id"],
-                "description": item["description"],
+                "id": error_list[item["id"]],
                 "count": item["count"]
             }
             errors_array.append(error_item)
@@ -42,8 +46,7 @@ def pretty_print(url):
         contrast_errors = data["categories"]["contrast"]["items"]
         for type, item in contrast_errors.items():
             error_item = {
-                "id": item["id"],
-                "description": item["description"],
+                "id": error_list[item["id"]],
                 "count": item["count"]
             }
             contrast_errors_array.append(error_item)
@@ -52,8 +55,7 @@ def pretty_print(url):
         alerts = data["categories"]["alert"]["items"]
         for type, item in alerts.items():
             error_item = {
-                "id": item["id"],
-                "description": item["description"],
+                "id": error_list[item["id"]],
                 "count": item["count"]
             }
             alerts_array.append(error_item)
