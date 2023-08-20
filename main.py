@@ -1,4 +1,4 @@
-from taipy.gui import Gui
+from taipy.gui import Gui, notify
 from src.visualize_charts import visualizing_errors
 from src.parse_json import pretty_print
 from taipy.gui import navigate
@@ -11,27 +11,31 @@ data_errors = {}
 data_alerts = {}
 
 page1 = """
+
 # Accesibility Checker 
-# Enter the URL of your website to easily perform an accessibility check
+### Enter the URL of your website to easily perform an accessibility check:
 
 <|{text}|input|>
 <|Check accessibility|button|on_action=on_button_action|>
+
 """
 
 def on_button_action(state):
     global url, data_errors, data_alerts
     page = "accessibilitycharts"
     url = state.text
-    print("url: " + url)
-    json_data = pretty_print(url)
-    errors_array = json_data[0]
-    contrast_errors_array = json_data[1]
-    alerts_array = json_data[2]
+    try:
+        json_data = pretty_print(url)
+        errors_array = json_data[0]
+        contrast_errors_array = json_data[1]
+        alerts_array = json_data[2]
 
-    result = visualizing_errors(errors_array, contrast_errors_array, alerts_array)
-    state.data_errors = result[0]
-    state.data_alerts = result[1]
-    navigate(state, to=page)
+        result = visualizing_errors(errors_array, contrast_errors_array, alerts_array)
+        state.data_errors = result[0]
+        state.data_alerts = result[1]
+        navigate(state, to=page)
+    except:
+        notify(state, 'error', f'The URL {state.text} is not valid. Please enter a valid URL.')
 
 page2 = """
 

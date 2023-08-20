@@ -25,3 +25,7 @@ A web application built with Taipy (an open-sourced Python library) to check the
 
 YouTube tutorials: https://www.youtube.com/@taipy_io  
 Official docs: https://www.taipy.io/ and https://docs.taipy.io/en/latest/getting_started/
+
+### Other Technologies
+
+Uses data collected from the WAVE API: https://wave.webaim.org/api/details

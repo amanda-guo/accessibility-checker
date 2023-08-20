@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("API_KEY")
 url = os.getenv("URL")
-report_type = 1
 
 # get data from WAVE api in json format
 
