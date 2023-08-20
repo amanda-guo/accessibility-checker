@@ -16,13 +16,14 @@ page1 = """
 ### Enter the URL of your website to easily perform an accessibility check:
 
 <|{text}|input|>
-<|Check accessibility|button|on_action=on_button_action|>
+<|Check accessibility|button|class_name=plain|on_action=on_button_action|>
 
 """
 
 def on_button_action(state):
     global url, data_errors, data_alerts
     page = "accessibilitycharts"
+    state.url = state.text
     url = state.text
     try:
         json_data = pretty_print(url)
@@ -39,21 +40,21 @@ def on_button_action(state):
 
 page2 = """
 
-## Accessibility Visualization
+# Here are some statistics on the accessibility issues of <|{url}|>
 
-# Bar graph for errors
+## Errors (bar graph)
 
 <|{data_errors}|chart|type=bar|x=Type of Error|y=Number of Errors|>
 
-# Pie chart for errors
+## Errors (pie chart)
 
 <|{data_errors}|chart|type=pie|values=Number of Errors|label=Type of Error|>
 
-# Bar graph for alerts
+## Alerts (bar graph)
 
 <|{data_alerts}|chart|type=bar|x=Type of Alert|y=Number of Alerts|>
 
-# Pie chart for alerts
+## Alerts (pie chart)
 
 <|{data_alerts}|chart|type=pie|values=Number of Alerts|label=Type of Alert|>
 
