@@ -11,8 +11,6 @@ report_type = 1
 
 def pretty_print(url):
 
-    print("THIS FUNCTION")
-
     # store general error
     errors_array = []
 
@@ -39,14 +37,6 @@ def pretty_print(url):
                 "count": item["count"]
             }
             errors_array.append(error_item)
-        
-        # print general errors
-        print("GENERAL ERRORS:")
-        for error in errors_array:
-            print("Type of Error: " + error["id"])
-            print("Error Description: " + error["description"])
-            print("Number of Errors: " + str(error["count"]))
-            print()
 
         # STORE CONTRAST ERRORS
         contrast_errors = data["categories"]["contrast"]["items"]
@@ -57,16 +47,8 @@ def pretty_print(url):
                 "count": item["count"]
             }
             contrast_errors_array.append(error_item)
-        
-        # print contrast errors
-        print("CONTRAST ERRORS")
-        for error in contrast_errors_array:
-            print("Type of Error: " + error["id"])
-            print("Error Description: " + error["description"])
-            print("Number of Errors: " + str(error["count"]))
-            print()
 
-        # store alerts
+        # STORE ALERTS
         alerts = data["categories"]["alert"]["items"]
         for type, item in alerts.items():
             error_item = {
@@ -75,13 +57,5 @@ def pretty_print(url):
                 "count": item["count"]
             }
             alerts_array.append(error_item)
-        
-        # print alerts
-        print("ALERTS")
-        for error in alerts_array:
-            print("Type of Error: " + error["id"])
-            print("Error Description: " + error["description"])
-            print("Number of Errors: " + str(error["count"]))
-            print()
 
     return errors_array, contrast_errors_array, alerts_array
