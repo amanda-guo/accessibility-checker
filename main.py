@@ -1,11 +1,14 @@
 from taipy.gui import Gui
 from visualize_charts import visualizing_errors
 from parse_json import pretty_print
-from taipy.gui import notify, navigate
+from taipy.gui import navigate
 
 root_md = ""
 
-text = "google.com"
+text = ""
+url = ""
+data_errors = {}
+data_alerts = {}
 
 page1 = """
 # Accesibility Checker 
@@ -16,17 +19,19 @@ page1 = """
 """
 
 def on_button_action(state):
+    global url, data_errors, data_alerts
     page = "accessibilitycharts"
+    url = state.text
+    print("url: " + url)
+    json_data = pretty_print(url)
+    errors_array = json_data[0]
+    contrast_errors_array = json_data[1]
+    alerts_array = json_data[2]
+
+    result = visualizing_errors(errors_array, contrast_errors_array, alerts_array)
+    state.data_errors = result[0]
+    state.data_alerts = result[1]
     navigate(state, to=page)
-
-json_data = pretty_print()
-errors_array = json_data[0]
-contrast_errors_array = json_data[1]
-alerts_array = json_data[2]
-
-result = visualizing_errors(errors_array, contrast_errors_array, alerts_array)
-data_errors = result[0]
-data_alerts = result[1]
 
 page2 = """
 

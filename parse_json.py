@@ -9,8 +9,11 @@ report_type = 1
 
 # get data from WAVE api in json format
 
-def pretty_print():
-    # store general errors
+def pretty_print(url):
+
+    print("THIS FUNCTION")
+
+    # store general error
     errors_array = []
 
     # store contrast errors
