@@ -1,6 +1,6 @@
 from taipy.gui import Gui
-from visualize_charts import visualizing_errors
-from parse_json import pretty_print
+from src.visualize_charts import visualizing_errors
+from src.parse_json import pretty_print
 from taipy.gui import navigate
 
 root_md = ""

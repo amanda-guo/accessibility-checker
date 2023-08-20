@@ -1,5 +1,7 @@
 # Accessibility Checker (Hack the 6ix 2023 project)
 
+A web application built with Taipy (an open-sourced Python library) to check the accessibility of a web page given its URL.
+
 ## Contributors: Amanda Guo, Miranda Guo, Prem Patel, Adnan Habib
 
 ### Setup local development environment on MacOS (following this guide: https://mlh.github.io/Getting-Started-with-Taipy/):

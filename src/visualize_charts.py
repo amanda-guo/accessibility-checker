@@ -32,6 +32,4 @@ def visualizing_errors(errors_array, contrast_errors_array, alerts_array):
         "Number of Alerts": numberOfAlerts
     }
 
-    print("EXECUTED THIS FUNCTION")
-
     return dataErrors, dataAlerts
