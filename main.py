@@ -12,7 +12,7 @@ data_alerts = {}
 
 page1 = """
 
-# Accesibility Checker 
+# Accessibility Checker 
 ### Enter the URL of your website to easily perform an accessibility check:
 
 <|{text}|input|>
